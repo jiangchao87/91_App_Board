@@ -88,9 +88,9 @@ uint  temp_mv[] =                                           // 2012 0727 ÖØÐÂ×ö±
 #define 	FANGCAI_PIN   PTDD_PTDD4  //Íâ½ç·Å²ð
 //#define   NIGHT_PIN   PTDD_PTDD7
  
-#define 	OPENLOCK      PTCD_PTCD2  //¿ªËø½Å
-#define 	MENCI_PIN     PTCD_PTCD1  //ÃÅ´Å
-#define 	KEY1_PIN      PTCD_PTCD0  //³öÃÅ°´Å¥ 
+#define 	OPENLOCK      PTDD_PTDD4  //¿ªËø½Å
+#define 	MENCI_PIN     PTDD_PTDD3  //ÃÅ´Å
+#define 	KEY1_PIN      PTDD_PTDD2  //³öÃÅ°´Å¥ 
 
 #define     RT_PIN        PTGD_PTGD3  //  ÈËÌå¸ÐÓ¦
 
@@ -363,7 +363,7 @@ void port_init(void)
     PTADD = 0XFF; 						//·½Ïò
     PTBDD = 0X7F; 						//B7-ÎÂ¶È
     PTCDD = 0b11011100; 				//0XFF;
-    PTDDD = 0XEE;						//D0-Ö÷ÎÂ¶È£»D4-Ô¤Áô·À²ð£»D5-CPU¼ÓÈÈÄ¤£»
+    PTDDD = 0XF2;						//D0-Ö÷ÎÂ¶È£»D4-Ô¤Áô·À²ð£»D5-CPU¼ÓÈÈÄ¤£»
     PTEDD = 0XDF;						//E5-×Ô¼ì£»ÆäËûÎ´ÓÃ
     PTFDD = 0X7F;						//F7-Ô¤Áô·À²ð£»ÆäËûÎ´ÓÃ
     PTGDD = 0XE7;						//G0-Ö¸Ê¾µÆ£»G4-ÆÁ¼ÓÈÈÄ¤£»G5G6ÌÕÕñ£»ÆäËûÎ´ÓÃ

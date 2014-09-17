@@ -285,9 +285,9 @@ MODULE:                 -- mc9s08ac60_c.obj --
      _PTADD                                       1       1       1       4   .abs_section_1
      _PTBD                                        2       1       1      41   .abs_section_2
      _PTBDD                                       3       1       1       1   .abs_section_3
-     _PTCD                                        4       1       1       5   .abs_section_4
+     _PTCD                                        4       1       1       1   .abs_section_4
      _PTCDD                                       5       1       1       3   .abs_section_5
-     _PTDD                                        6       1       1       3   .abs_section_6
+     _PTDD                                        6       1       1       7   .abs_section_6
      _PTDDD                                       7       1       1       3   .abs_section_7
      _PTED                                        8       1       1       1   .abs_section_8
      _PTEDD                                       9       1       1       1   .abs_section_9
@@ -736,9 +736,9 @@ OBJECT LIST SORTED BY ADDRESS
      _PTADD                                       1       1       1       4   .abs_section_1
      _PTBD                                        2       1       1      41   .abs_section_2
      _PTBDD                                       3       1       1       1   .abs_section_3
-     _PTCD                                        4       1       1       5   .abs_section_4
+     _PTCD                                        4       1       1       1   .abs_section_4
      _PTCDD                                       5       1       1       3   .abs_section_5
-     _PTDD                                        6       1       1       3   .abs_section_6
+     _PTDD                                        6       1       1       7   .abs_section_6
      _PTDDD                                       7       1       1       3   .abs_section_7
      _PTED                                        8       1       1       1   .abs_section_8
      _PTEDD                                       9       1       1       1   .abs_section_9
@@ -1072,7 +1072,7 @@ Stop_Heat1                USES _PTDDD _PTDD
 T2                        USES _TPM2SC card_ms10 time_ms10 _PTGD hl_chngbz 
                                 rt_340 rt_2s led_rtdsp time_s cpu_reset_s sec 
                                 g_heat_now G_HEAT1 G_HEAT1_T g_testing Start_Heat1 
-                                Stop_Heat1 _PTCD g_key1_times 
+                                Stop_Heat1 _PTDD g_key1_times 
 SCI2_ERROR                USES _SCI2S1 
 SCI2_R                    USES _SCI2S1 _SCI2C3 _SCI2D g_rcvnum rsv_AA g_rcvbcc 
                                 g_cmd_received g_rcvbuf cpu_reset_s 
@@ -1089,7 +1089,7 @@ main                      USES Stop_Heat1 _SRS _LINC _POP32 _LCMP_RC MCUinit
                                 port_init mark_pwd_set Init_FM1702 Delay_ms10 main 
                                 g_testing sec UART2_test Start_Heat1 Heat 
                                 Check_Ext_Power_Status _PTGD rt_340 RT_FS_C1_g0 UART2_renti_come 
-                                led_rtdsp rt_2s UART2_renti_go _PTCD re_menci 
+                                led_rtdsp rt_2s UART2_renti_go _PTDD re_menci 
                                 UART2_menci_open UART2_menci_close g_key1_times UART2_kaimen 
                                 g_cmd_received g_rcvbuf UART2_ASW _PTCDD card_ms10 
                                 g_uart2_index Find_card card_find AntiColl Select_Card _PTBD 
